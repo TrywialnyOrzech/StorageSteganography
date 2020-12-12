@@ -1,7 +1,7 @@
-from src.test import printtest
+from src.send_icmp import icmp
 
 def main():
-    pass
+    icmp()
 
 if __name__ == '__main__':
     main()
