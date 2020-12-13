@@ -3,6 +3,9 @@ from scapy.all import *
 
 def change(pkt):
     char = (pkt.load).decode("utf-8")
+    file = open("decoded_packets.txt", "a")
+    file.write(char)
+    file.close()
 
 def steg_icmp():
     try:
